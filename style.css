@@ -1,23 +1,23 @@
 body{
   background-color:   #f7f7f7;
-  /* margin: 0 auto; */
-  /* height: auto; */
   font: 15px/1.5 Arial, Helvetica, sans-serif;
-
   text-align: center;
 }
-
 
 * {
     box-sizing: border-box;
 } 
 
-header{
-    text-align: center;
+
+/* Common CSS */
+.Q-label, .Q-label-1, .box-label, #wall-head, #youtubers, #curriculum {
+    color: #202040;
 }
 
+.box-label, .Q-label-1, .Q-label, .section-head, #youtubers , #curriculum{
+    text-transform: uppercase;
+}
 #wall-head{
-    color: #202040;
     font-size: 60px;
 }
 
@@ -39,39 +39,22 @@ p{
     width: 75%;
     font-size: large;
     border-radius: 15px;
-     text-transform: uppercase;
      letter-spacing: .025em;
      font-weight: 600;
      margin-top: 45px;
-     /* height: 30px; */
-     
 }
-
-
-/* Flash Card */
-/* 
-.beginner-advice{
-    height: 1200px;
-    align-items: center;
-    display: flex;
-} */
-
 
 .col{
     padding: 35px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .card-1{
     
-    /* display: flex; */
     background: #f7f7f7;
     color:#888888;
-    /* margin: 0; */
-    /* padding: 0; */
     border: 1px solid #555;
     list-style-type: none;
     margin-right: 100px;
@@ -79,9 +62,6 @@ p{
     margin-bottom: 25px;
     height: 500px;
     width: 480px;
-    
-
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
     transition: .3s;
 }
 
@@ -100,7 +80,6 @@ p{
     transition: .3s;
 }
 
-
 .card-3{
     background: #f7f7f7;
     color:#888888;
@@ -116,7 +95,6 @@ p{
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
     transition: .3s;
 }
-
 
 .card-4{
     background: #f7f7f7;
@@ -142,7 +120,6 @@ hr{
     display: block;
 }
 
-
 .currm{
     display: flex;
     padding: 30px 35px;
@@ -157,8 +134,6 @@ hr{
 .currm-2{
     height: 400px;
     width: 400px;
-    /* margin-left: 35px; */
-
 }
 
 .currm-3{
@@ -167,23 +142,15 @@ hr{
     margin-left: 35px;
 }
 
-
-
 #youtubers , #curriculum{
     font-size: 20px;
-    text-transform: uppercase;
-    color: #202040;
-
 }
-
 
 #youtube-channels{
     height: 300px;
     padding: 20px 60px;
-   display: flex;
-    
+   display: flex;   
 }
-
 
 #youtube-channels a{
     text-decoration: none;
@@ -198,11 +165,9 @@ hr{
 
 /* FAQ */
 
-
 .box-label{
     font-size: 20px;
-    text-transform: uppercase;
-    color: #202040;  }
+}
 
 .faq-1{
     padding: 35px;
@@ -214,52 +179,59 @@ hr{
     border-radius: 10px;
     display: flex;
     align-items: center;
-   
 }
 
-#box-1 , #box-2{
-    padding-left: 35px;
-    padding-right: 35px;
+.faq-4 {
+	width: 380px;
+	border: #1a202c 1px solid;
+	border-radius: 10px;
+	display: flex;
+	margin: 0 auto;
 }
 
+#box-3{
+	margin: 0 auto;
+}
 
-#box-1 ul li , #box-2 ul li  {
+#box-1 ul li , #box-2 ul li, #box-3 ul li  {
     
     list-style: none;
     margin-bottom: 5px;
 }
 
+#box-1 a , #box-2 a, #box-3 a  {
 
-#box-1 a , #box-2 a  {
-    
-    text-decoration: none;
     color: #1a202c;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-  #box-1 a:hover , #box-2 a:hover {
+  #box-1 a:hover , #box-2 a:hover, #box-2 a:hover {
 color: #888888;
 
 }
 
 .Q-label{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     font-size: 30px;
-    text-transform: uppercase;
-    color: #202040;  
 }
 
-
-
+.Q-label-1 {
+	font-size: 30px;
+}
 
 .faq-3 a{
     color: #4a5568;
     font-size: 20px;
     text-decoration: none;
-    
 }
 
 a:hover{
     font-size: 25px;
     color: #1a202c;
+}
+
+iframe{
+    aspect-ratio: 2/1;
+    width: 50%;
 }
